@@ -165,7 +165,6 @@ public class DanielLópez extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 420, 560));
 
-        BontonCirculo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/o_don.gif"))); // NOI18N
         BontonCirculo.setText("Circ");
         BontonCirculo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -174,7 +173,6 @@ public class DanielLópez extends javax.swing.JFrame {
         });
         getContentPane().add(BontonCirculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 130, 110));
 
-        BotonCuadrado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Cuadrado-2.png"))); // NOI18N
         BotonCuadrado.setText("Cuad");
         BotonCuadrado.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -184,7 +182,6 @@ public class DanielLópez extends javax.swing.JFrame {
         getContentPane().add(BotonCuadrado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 130, 90));
 
         BotonColor.setFont(new java.awt.Font("Tahoma", 0, 5)); // NOI18N
-        BotonColor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paleta-y-pinceles1.jpg"))); // NOI18N
         BotonColor.setText("COLOR");
         BotonColor.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -197,11 +194,9 @@ public class DanielLópez extends javax.swing.JFrame {
         Discontinuo.setText("Discontinuo");
         getContentPane().add(Discontinuo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 630, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Canvas_linewidth_1.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
+        jLabel1.setText("Grosor");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 110, 40));
 
-        Borrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/goma-de-borrar_135.gif"))); // NOI18N
         Borrar.setText("Borrar");
         Borrar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -216,7 +211,6 @@ public class DanielLópez extends javax.swing.JFrame {
         jLabel2.setText("Paint");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, 280, 70));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ganancias%20forex.png"))); // NOI18N
         jButton1.setText("jButton1");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -226,10 +220,9 @@ public class DanielLópez extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 130, 90));
 
         Relleno1.setText("Relleno objeto");
-        getContentPane().add(Relleno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 220, -1, -1));
+        getContentPane().add(Relleno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 200, -1, -1));
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 70, 130, -1));
 
-        BotonRellenar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/250px-Backpack_Mann_Co._Painting_Set.png"))); // NOI18N
         BotonRellenar.setText("Rellenar");
         getContentPane().add(BotonRellenar, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 100, 210, 140));
 
