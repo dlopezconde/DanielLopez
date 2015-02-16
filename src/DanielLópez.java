@@ -91,9 +91,8 @@ public class DanielLópez extends javax.swing.JFrame {
         Borrar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        Relleno1 = new javax.swing.JCheckBox();
         jLabel3 = new javax.swing.JLabel();
-        BotonRellenar = new javax.swing.JButton();
+        Relleno1 = new javax.swing.JCheckBox();
 
         AceptarColor.setText("Aceptar");
         AceptarColor.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -165,7 +164,7 @@ public class DanielLópez extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 420, 560));
 
-        BontonCirculo.setText("Circ");
+        BontonCirculo.setText("Circulo");
         BontonCirculo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 BontonCirculoMousePressed(evt);
@@ -173,29 +172,34 @@ public class DanielLópez extends javax.swing.JFrame {
         });
         getContentPane().add(BontonCirculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 130, 110));
 
-        BotonCuadrado.setText("Cuad");
+        BotonCuadrado.setText("Cuadrado");
         BotonCuadrado.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 BotonCuadradoMousePressed(evt);
             }
         });
+        BotonCuadrado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonCuadradoActionPerformed(evt);
+            }
+        });
         getContentPane().add(BotonCuadrado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 130, 90));
 
-        BotonColor.setFont(new java.awt.Font("Tahoma", 0, 5)); // NOI18N
+        BotonColor.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         BotonColor.setText("COLOR");
         BotonColor.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 BotonColorMousePressed(evt);
             }
         });
-        getContentPane().add(BotonColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 270, 260, 170));
-        getContentPane().add(jSlider1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 540, 132, -1));
+        getContentPane().add(BotonColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, 260, 170));
+        getContentPane().add(jSlider1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 590, 170, -1));
 
         Discontinuo.setText("Discontinuo");
-        getContentPane().add(Discontinuo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 630, -1, -1));
+        getContentPane().add(Discontinuo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, -1, -1));
 
         jLabel1.setText("Grosor");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 110, 40));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 580, 110, 40));
 
         Borrar.setText("Borrar");
         Borrar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -203,7 +207,7 @@ public class DanielLópez extends javax.swing.JFrame {
                 BorrarMousePressed(evt);
             }
         });
-        getContentPane().add(Borrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 480, 260, 170));
+        getContentPane().add(Borrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 340, 260, 170));
 
         jLabel2.setFont(new java.awt.Font("Bookman Old Style", 2, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 255, 0));
@@ -211,20 +215,18 @@ public class DanielLópez extends javax.swing.JFrame {
         jLabel2.setText("Paint");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, 280, 70));
 
-        jButton1.setText("jButton1");
+        jButton1.setBackground(new java.awt.Color(255, 51, 153));
+        jButton1.setText("Linea");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButton1MousePressed(evt);
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 130, 90));
-
-        Relleno1.setText("Relleno objeto");
-        getContentPane().add(Relleno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 200, -1, -1));
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 70, 130, -1));
 
-        BotonRellenar.setText("Rellenar");
-        getContentPane().add(BotonRellenar, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 100, 210, 140));
+        Relleno1.setText("Relleno objeto");
+        getContentPane().add(Relleno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, -1, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -421,6 +423,7 @@ public class DanielLópez extends javax.swing.JFrame {
 
     private void BotonCuadradoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BotonCuadradoMousePressed
         //Al pulsar este botón nos dibujará el rectángulo
+        
         forma = 3;
 
     }//GEN-LAST:event_BotonCuadradoMousePressed
@@ -428,6 +431,7 @@ public class DanielLópez extends javax.swing.JFrame {
     private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed
         //Al pulsar este botón nos dibujará la línea
         forma = 1;
+        
     }//GEN-LAST:event_jButton1MousePressed
 
     private void BorrarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BorrarMousePressed
@@ -442,6 +446,10 @@ public class DanielLópez extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_BorrarMousePressed
+
+    private void BotonCuadradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonCuadradoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonCuadradoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -485,7 +493,6 @@ public class DanielLópez extends javax.swing.JFrame {
     private javax.swing.JButton Borrar;
     private javax.swing.JButton BotonColor;
     private javax.swing.JButton BotonCuadrado;
-    private javax.swing.JButton BotonRellenar;
     private javax.swing.JButton CancelarColor;
     private javax.swing.JCheckBox Discontinuo;
     private javax.swing.JCheckBox Relleno1;
