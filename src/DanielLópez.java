@@ -17,7 +17,7 @@ import javax.swing.JLabel;
  */
 /**
  *
- * @author xp
+ * @dlopezconde
  */
 public class DanielLópez extends javax.swing.JFrame {
 //creamos una variable de tipo linea para guardar y la llamaremos forma 1
